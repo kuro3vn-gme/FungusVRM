@@ -1,0 +1,19 @@
+{
+    "name": "com.kuro3vn-gme.fungus-vrm",
+    "displayName": "FungusVRM", 
+    "version": "1.0.0",               
+    "unity": "2020.2",
+    "description": "Fungus command for VRM",
+    "author": {
+        "name": "kurosan",
+        "url": "https://github.com/kuro3vn-gme"
+    },
+
+    "keywords": [
+        "vrm",
+        "fungus",
+    ],
+
+    "dependencies": {
+    }
+}
