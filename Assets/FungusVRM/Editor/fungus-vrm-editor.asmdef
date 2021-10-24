@@ -1,0 +1,19 @@
+{
+    "name": "fungus-vrm-editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:007db7f7a4c8f944990d71603a110f82",
+        "GUID:05dd262a0c0a2f841b8252c8c3815582",
+        "GUID:b89e1dfd31f6b6b418215d78d01b0037",
+        "GUID:34cf00d3f10a8f34783a2f8b914a0219"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
