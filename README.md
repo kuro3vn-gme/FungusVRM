@@ -11,3 +11,17 @@ FungusからVRMを操作するコマンド
 ## Git Path (Unity Package Manager)
 
 > https://github.com/kuro3vn-gme/FungusVRM.git?path=Assets/FungusVRM
+
+## Commands
+
+### SetVRMBlendShape
+
+VRMモデルのブレンドシェイプの値を変更します。
+
+![SS1](Images/SS_SetVRMBlendShape.png)
+
+### SetVRMLookTarget
+
+VRMモデルの視線のターゲットを変更します。
+
+![SS2](Images/SS_SetVRMLookTarget.png)
