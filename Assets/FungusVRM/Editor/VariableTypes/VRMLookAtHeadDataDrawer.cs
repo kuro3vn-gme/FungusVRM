@@ -1,9 +1,9 @@
 using UnityEditor;
-using Fungus.VRM;
+using Fungus.EditorUtils;
+using FungusExtensions.VRM;
 
-namespace Fungus.EditorUtils.VRM
+namespace FungusExtensions.EditorUtils.VRM
 {
-    [CustomPropertyDrawer(typeof(VRMLookAtHeadData))]
-    public class VRMLookAtHeadDataDrawer : VariableDataDrawer<VRMLookAtHeadVariable>
-    { }
+	[CustomPropertyDrawer(typeof(VRMLookAtHeadData))]
+	public class VRMLookAtHeadDataDrawer : VariableDataDrawer<VRMLookAtHeadVariable> { }
 }

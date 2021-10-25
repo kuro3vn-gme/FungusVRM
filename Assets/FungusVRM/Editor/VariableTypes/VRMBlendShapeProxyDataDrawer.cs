@@ -1,9 +1,9 @@
 using UnityEditor;
-using Fungus.VRM;
+using Fungus.EditorUtils;
+using FungusExtensions.VRM;
 
-namespace Fungus.EditorUtils.VRM
+namespace FungusExtensions.EditorUtils.VRM
 {
-    [CustomPropertyDrawer(typeof(VRMBlendShapeProxyData))]
-    public class VRMBlendShapeProxyDataDrawer : VariableDataDrawer<VRMBlendShapeProxyVariable>
-    { }
+	[CustomPropertyDrawer(typeof(VRMBlendShapeProxyData))]
+	public class VRMBlendShapeProxyDataDrawer : VariableDataDrawer<VRMBlendShapeProxyVariable> { }
 }

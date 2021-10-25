@@ -1,52 +1,51 @@
 using UnityEngine;
 using VRM;
+using Fungus;
 
-namespace Fungus.VRM
+namespace FungusExtensions.VRM
 {
-    [VariableInfo("VRM", "VRMBlendShapeProxy")]
-    [AddComponentMenu("")]
-    [System.Serializable]
-    public class VRMBlendShapeProxyVariable : VariableBase<VRMBlendShapeProxy>
-    {
-    }
+	[VariableInfo("VRM", nameof(VRMBlendShapeProxy))]
+	[AddComponentMenu("")]
+	[System.Serializable]
+	public class VRMBlendShapeProxyVariable : VariableBase<VRMBlendShapeProxy> { }
 
-    [System.Serializable]
-    public struct VRMBlendShapeProxyData
-    {
-        [SerializeField]
-        [VariableProperty("<Value>", typeof(VRMBlendShapeProxyVariable))]
-        public VRMBlendShapeProxyVariable vRMBlendShapeProxyRef;
-        
-        [SerializeField]
-        public VRMBlendShapeProxy vRMBlendShapeProxyVal;
+	[System.Serializable]
+	public struct VRMBlendShapeProxyData
+	{
+		[SerializeField]
+		[VariableProperty("<Value>", typeof(VRMBlendShapeProxyVariable))]
+		public VRMBlendShapeProxyVariable vRMBlendShapeProxyRef;
 
-        public static implicit operator VRMBlendShapeProxy(VRMBlendShapeProxyData vRMBlendShapeProxyData)
-        {
-            return vRMBlendShapeProxyData.Value;
-        }
+		[SerializeField]
+		public VRMBlendShapeProxy vRMBlendShapeProxyVal;
 
-        public VRMBlendShapeProxyData(VRMBlendShapeProxy v)
-        {
-            vRMBlendShapeProxyVal = v;
-            vRMBlendShapeProxyRef = null;
-        }
-            
-        public VRMBlendShapeProxy Value
-        {
-            get { return (vRMBlendShapeProxyRef == null) ? vRMBlendShapeProxyVal : vRMBlendShapeProxyRef.Value; }
-            set { if (vRMBlendShapeProxyRef == null) { vRMBlendShapeProxyVal = value; } else { vRMBlendShapeProxyRef.Value = value; } }
-        }
+		public static implicit operator VRMBlendShapeProxy(VRMBlendShapeProxyData vRMBlendShapeProxyData)
+		{
+			return vRMBlendShapeProxyData.Value;
+		}
 
-        public string GetDescription()
-        {
-            if (vRMBlendShapeProxyRef == null)
-            {
-                return vRMBlendShapeProxyVal != null ? vRMBlendShapeProxyVal.ToString() : "Null";
-            }
-            else
-            {
-                return vRMBlendShapeProxyRef.Key;
-            }
-        }
-    }
+		public VRMBlendShapeProxyData(VRMBlendShapeProxy v)
+		{
+			vRMBlendShapeProxyVal = v;
+			vRMBlendShapeProxyRef = null;
+		}
+
+		public VRMBlendShapeProxy Value
+		{
+			get { return (vRMBlendShapeProxyRef == null) ? vRMBlendShapeProxyVal : vRMBlendShapeProxyRef.Value; }
+			set { if (vRMBlendShapeProxyRef == null) { vRMBlendShapeProxyVal = value; } else { vRMBlendShapeProxyRef.Value = value; } }
+		}
+
+		public string GetDescription()
+		{
+			if (vRMBlendShapeProxyRef == null)
+			{
+				return vRMBlendShapeProxyVal != null ? vRMBlendShapeProxyVal.ToString() : "Null";
+			}
+			else
+			{
+				return vRMBlendShapeProxyRef.Key;
+			}
+		}
+	}
 }
